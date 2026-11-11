@@ -1,0 +1,32 @@
+name: KyunShop
+version: 1.0.0
+main: com.kyunsmp.shop.KyunShop
+api-version: '1.21'
+description: Donut SMP tarzi shop ve sell sistemi
+commands:
+  shop:
+    description: Shop menusunu acar
+    usage: /shop [kategori]
+    aliases: [market]
+  sell:
+    description: Esya satma menusunu acar
+    usage: /sell [hand]
+  balance:
+    description: Bakiyeni gosterir
+    usage: /balance [oyuncu]
+    aliases: [bal, money]
+  pay:
+    description: Baska bir oyuncuya para gonderir
+    usage: /pay <oyuncu> <miktar>
+  eco:
+    description: Oyuncu bakiyesini yonetir
+    usage: /eco <give|take|set> <oyuncu> <miktar>
+    permission: kyunshop.admin
+  shopadmin:
+    description: Shop kategorilerini ve fiyatlarini yonetir
+    usage: /shopadmin <alt komut>
+    permission: kyunshop.admin
+permissions:
+  kyunshop.admin:
+    description: Shop ve ekonomi yonetimi
+    default: op

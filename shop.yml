@@ -1,0 +1,218 @@
+# ============================================================
+#  KyunShop - shop.yml
+# ============================================================
+#  /shop menüsündeki kategoriler ve ürünler burada.
+#  Format:   MATERYAL: alış fiyatı   (oyuncunun shop'tan alırken ödediği)
+#  "sell:" bölümü ise /sell ile satarken verilen fiyatlar.
+#
+#  Yeni kategori eklemek için "categories:" altına yeni blok yaz
+#  (örn. "redstone" bloğunu kopyala). Ya da oyunda:
+#     /shopadmin addcategory <id>          (elindeki eşya ikon olur)
+#     /shopadmin additem <id> <fiyat> [satis]   (elindeki eşyayı ekler)
+#  Değişiklikten sonra: /shopadmin reload
+#  Fiyatlarda 1k, 2.5m, 1b gibi kısaltmalar komutlarda kullanılabilir.
+# ============================================================
+
+menu-title: "&8Shop"
+
+categories:
+  blocks:
+    name: "&aBloklar"
+    icon: GRASS_BLOCK
+    items:
+      STONE: 8
+      COBBLESTONE: 4
+      DIRT: 3
+      GRASS_BLOCK: 6
+      SAND: 5
+      GRAVEL: 5
+      OAK_LOG: 12
+      SPRUCE_LOG: 12
+      BIRCH_LOG: 12
+      OAK_PLANKS: 4
+      GLASS: 10
+      BRICKS: 25
+      DEEPSLATE: 8
+      NETHERRACK: 3
+      END_STONE: 10
+      OBSIDIAN: 150
+      QUARTZ_BLOCK: 40
+      TERRACOTTA: 15
+  redstone:
+    name: "&cRedstone"
+    icon: REDSTONE
+    items:
+      REDSTONE: 15
+      REDSTONE_BLOCK: 135
+      REPEATER: 45
+      COMPARATOR: 70
+      OBSERVER: 90
+      PISTON: 80
+      STICKY_PISTON: 120
+      HOPPER: 130
+      DISPENSER: 90
+      DROPPER: 80
+      LEVER: 8
+      STONE_BUTTON: 6
+      REDSTONE_LAMP: 60
+      SLIME_BLOCK: 110
+      TNT: 160
+      DAYLIGHT_DETECTOR: 100
+      TRIPWIRE_HOOK: 25
+      NOTE_BLOCK: 40
+  farming:
+    name: "&eÇiftlik"
+    icon: WHEAT
+    items:
+      WHEAT_SEEDS: 3
+      WHEAT: 8
+      CARROT: 6
+      POTATO: 6
+      BEETROOT_SEEDS: 3
+      MELON_SLICE: 3
+      PUMPKIN: 10
+      SUGAR_CANE: 6
+      BONE_MEAL: 10
+      COCOA_BEANS: 8
+      NETHER_WART: 14
+      BAMBOO: 3
+      CACTUS: 6
+      KELP: 3
+      SWEET_BERRIES: 5
+  ores:
+    name: "&bMadenler"
+    icon: DIAMOND
+    items:
+      COAL: 20
+      IRON_INGOT: 60
+      GOLD_INGOT: 80
+      COPPER_INGOT: 20
+      DIAMOND: 500
+      EMERALD: 300
+      LAPIS_LAZULI: 30
+      NETHERITE_INGOT: 15000
+      QUARTZ: 25
+      AMETHYST_SHARD: 40
+  combat:
+    name: "&4Savaş"
+    icon: DIAMOND_SWORD
+    items:
+      ARROW: 6
+      BOW: 150
+      CROSSBOW: 200
+      SHIELD: 100
+      ENDER_PEARL: 150
+      GOLDEN_APPLE: 300
+      EXPERIENCE_BOTTLE: 120
+      TOTEM_OF_UNDYING: 5000
+      DIAMOND_SWORD: 800
+      DIAMOND_PICKAXE: 1500
+  food:
+    name: "&6Yiyecek"
+    icon: COOKED_BEEF
+    items:
+      COOKED_BEEF: 12
+      COOKED_PORKCHOP: 12
+      COOKED_CHICKEN: 10
+      COOKED_SALMON: 10
+      BREAD: 8
+      BAKED_POTATO: 8
+      GOLDEN_CARROT: 40
+      APPLE: 6
+      PUMPKIN_PIE: 14
+
+# /sell ile satış fiyatları (tanesi). Burada olmayan eşya satılamaz.
+# Shop'ta olmayan eşyaları da (mob drop gibi) buraya ekleyebilirsin.
+sell:
+  STONE: 3
+  COBBLESTONE: 1.5
+  DIRT: 1
+  GRASS_BLOCK: 2
+  SAND: 2
+  GRAVEL: 2
+  OAK_LOG: 5
+  SPRUCE_LOG: 5
+  BIRCH_LOG: 5
+  OAK_PLANKS: 1.5
+  GLASS: 4
+  BRICKS: 10
+  DEEPSLATE: 3
+  NETHERRACK: 1
+  END_STONE: 4
+  OBSIDIAN: 60
+  QUARTZ_BLOCK: 16
+  TERRACOTTA: 6
+  REDSTONE: 6
+  REDSTONE_BLOCK: 54
+  REPEATER: 18
+  COMPARATOR: 28
+  OBSERVER: 36
+  PISTON: 32
+  STICKY_PISTON: 48
+  HOPPER: 52
+  DISPENSER: 36
+  DROPPER: 32
+  LEVER: 3
+  REDSTONE_LAMP: 24
+  SLIME_BLOCK: 44
+  TNT: 60
+  DAYLIGHT_DETECTOR: 40
+  NOTE_BLOCK: 16
+  WHEAT_SEEDS: 1
+  WHEAT: 3
+  CARROT: 2.5
+  POTATO: 2.5
+  BEETROOT_SEEDS: 1
+  MELON_SLICE: 1.2
+  PUMPKIN: 4
+  SUGAR_CANE: 2.5
+  BONE_MEAL: 4
+  COCOA_BEANS: 3
+  NETHER_WART: 5
+  BAMBOO: 1
+  CACTUS: 2
+  KELP: 1
+  SWEET_BERRIES: 2
+  COAL: 8
+  IRON_INGOT: 25
+  GOLD_INGOT: 35
+  COPPER_INGOT: 8
+  DIAMOND: 200
+  EMERALD: 120
+  LAPIS_LAZULI: 12
+  NETHERITE_INGOT: 6000
+  QUARTZ: 10
+  AMETHYST_SHARD: 16
+  RAW_IRON: 20
+  RAW_GOLD: 28
+  RAW_COPPER: 6
+  ARROW: 2
+  ENDER_PEARL: 50
+  GOLDEN_APPLE: 100
+  EXPERIENCE_BOTTLE: 40
+  TOTEM_OF_UNDYING: 1800
+  COOKED_BEEF: 4
+  COOKED_PORKCHOP: 4
+  COOKED_CHICKEN: 3.5
+  COOKED_SALMON: 3.5
+  BREAD: 3
+  BAKED_POTATO: 3
+  GOLDEN_CARROT: 15
+  APPLE: 2
+  PUMPKIN_PIE: 5
+  ROTTEN_FLESH: 1
+  BONE: 2
+  STRING: 3
+  SPIDER_EYE: 3
+  GUNPOWDER: 8
+  BLAZE_ROD: 30
+  SLIME_BALL: 10
+  GHAST_TEAR: 100
+  PHANTOM_MEMBRANE: 20
+  LEATHER: 4
+  FEATHER: 1.5
+  INK_SAC: 2
+  PRISMARINE_SHARD: 6
+  MAGMA_CREAM: 10
+  SHULKER_SHELL: 300
+  NETHER_STAR: 8000
